@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  border: 1px solid red;
+}
+
+.slides-container {
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: transform 500ms ease-in-out;
+  position: relative;
+}
+
+.slide {
+  border: 1px solid blue;
+  box-sizing: border-box;
+  display: block;
+  flex-shrink: 0;
+  height: 50vh;
+  width: 100%;
+}
+
+.slide.is-active {
+  border: 1px solid blue;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.dots li {
+  display: block;
+}
+
+.dot {
+  border-radius: 50%;
+  height: 30px;
+  margin: 10px;
+  width: 30px;
+}
+
+.dot.is-active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.visually-hidden {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+}
